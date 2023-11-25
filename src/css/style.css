@@ -26,6 +26,12 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     max-height: 0;
+    max-height: fit-content;
+    overflow: hidden;
+}
+
+.collapse-block-description {
+    margin: 20px;
 }
 
 @keyframes collapseDown {
@@ -46,6 +52,14 @@
     100% {
         max-height: 0px;
     }
+}
+
+.collapse-down {
+    animation: collapseDown .5s forwards;
+}
+
+.collapse-up {
+    animation: collapseUp .3s forwards;
 }
 
 .collapse-btn {
